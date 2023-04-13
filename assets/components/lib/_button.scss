@@ -1,0 +1,19 @@
+button.offer-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 2.5rem;
+    background-color: $color-blue;
+    border-radius: .8rem;
+    border: none;
+    cursor: pointer;
+}
+
+button.offer-btn {
+    p {
+        font-size: $font-size-md;
+        color: $color-white;
+        font-weight: $base-font-weight;
+    }
+}

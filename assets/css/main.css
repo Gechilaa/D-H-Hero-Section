@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Switzer", sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  height: 100vh;
+}
+
+@media screen and (max-width: 70rem) {
+  body {
+    height: auto;
+  }
+}
+nav.navigation {
+  background-color: #fff;
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  border: 2px solid #ebeaef;
+  z-index: 999;
+}
+
+nav.navigation .navbar-links {
+  display: flex;
+  gap: 2.5rem;
+}
+
+nav.navigation .navbar-links a {
+  color: #000;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+
+nav.navigation .burger-menu {
+  display: none;
+}
+nav.navigation .burger-menu svg {
+  display: none;
+}
+
+@media screen and (max-width: 70rem) {
+  nav.navigation {
+    width: 100vw;
+  }
+  nav.navigation .navbar-logo {
+    margin-left: 1.5rem;
+  }
+  nav.navigation .navbar-links {
+    display: none;
+  }
+  nav.navigation .offer-btn {
+    display: none;
+  }
+  nav.navigation .burger-menu {
+    display: block;
+  }
+  nav.navigation .burger-menu svg {
+    display: block;
+    cursor: pointer;
+    width: 3rem;
+    margin-right: 1.5rem;
+  }
+}
+button.offer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem 2.5rem;
+  background-color: #1042f2;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+}
+
+button.offer-btn p {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.container {
+  display: grid;
+  width: 90vw;
+  margin: 0 auto;
+  height: 100%;
+  grid-template-columns: 1fr 1.1fr;
+  grid-gap: 1rem;
+  gap: 1rem;
+  padding-top: 10vh;
+}
+
+@media screen and (max-width: 70rem) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 3rem;
+    padding-top: 10vh;
+  }
+}
+.content {
+  align-self: center;
+  justify-self: center;
+}
+
+.content h1 {
+  font-family: "General Sans", sans-serif;
+  font-size: 7rem;
+  font-weight: 600;
+  line-height: 8rem;
+}
+
+.content .content-paragraph {
+  font-size: 1.7rem;
+  line-height: 2.5rem;
+  color: var(--violet);
+  margin: 2rem 0 4rem;
+}
+
+.content button.btn {
+  padding: 1rem 3rem;
+}
+
+/* ================ Hero Section Right Column ============== */
+/* ================== Video ================= */
+div.video {
+  position: relative;
+  margin-top: 1rem;
+  height: 98%;
+  border-radius: 2.15rem;
+  border: 10px solid #d3dcfb;
+}
+
+div.video video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1.5rem;
+}

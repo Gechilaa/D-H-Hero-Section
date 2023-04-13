@@ -1,0 +1,52 @@
+.content {
+    align-self: center;
+    justify-self: center;
+}
+
+.content {
+    h1 {
+        font-family: 'General Sans', sans-serif;
+        font-size: 7rem;
+        font-weight: 600;
+        line-height: 8rem;
+    }
+}
+
+.content {
+    .content-paragraph {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+        color: var(--violet);
+        margin: 2rem 0 4rem;
+    }        
+}
+
+.content {
+    button.btn {
+        padding: 1rem 3rem
+    }
+}
+
+/* ================ Hero Section Right Column ============== */
+/* ================== Video ================= */
+
+div.video {
+    position: relative;
+    margin-top: 1rem;
+    height: 98%;
+    border-radius: 2.15rem;
+    border: 10px solid $border-of-video;
+}
+
+div.video {
+    video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 1.5rem;
+    }
+}

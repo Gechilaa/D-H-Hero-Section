@@ -1,0 +1,19 @@
+.container {
+    display: grid;
+    width: $main-container-width;
+    margin: $main-container-margin;
+    height: 100%;
+    grid-template-columns: 1fr 1.1fr;
+    grid-gap: 1rem;
+    gap: 1rem;
+    padding-top: 10vh;
+}
+
+@media screen and (max-width: 70rem) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3rem;
+        padding-top: 10vh;   
+    }
+}

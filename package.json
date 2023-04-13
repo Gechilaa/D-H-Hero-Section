@@ -1,0 +1,17 @@
+{
+  "name": "dylanxhelen",
+  "version": "1.0.0",
+  "description": "D&H Official Landing Section",
+  "main": "index.js",
+  "scripts": {
+    "test": "clear"
+  },
+  "author": "Tornike Gachechiladze",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-purgecss": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.0"
+  }
+}

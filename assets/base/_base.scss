@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $switzer;
+}
+
+body {
+    background: $main-background-color;
+    height: 100vh;
+}
+
+@media screen and (max-width: 70rem) {
+    body {
+        height: auto;
+    }
+}
